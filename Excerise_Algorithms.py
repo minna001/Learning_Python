@@ -85,3 +85,11 @@ All rows of column Definition where the value of the column Expression starts wi
 
 "SELECT Definition FROM Dictionary WHERE Expression  LIKE 'r%'"
 """
+"""
+from geopy.geocoders import Nominatim
+nom = Nominatim()
+change them to these
+
+from geopy.geocoders import ArcGIS
+nom = ArcGIS()
+"""
