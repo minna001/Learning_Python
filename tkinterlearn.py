@@ -18,6 +18,18 @@ def kgtoothers():
 def successMessage():
     messagebox.showinfo("Success","Converted from KG to Grams,Pounds,and Ounces")   
 
+def ExitApplication():
+    MsgBox = messagebox.askquestion ('Exit Application','Are you sure you want to exit the application',icon = 'warning')
+    if MsgBox == 'yes':
+       window.destroy()
+    else:
+        window.messagebox.showinfo('Return','You will now return to the application screen')
+
+
+button2 = Button(window, text='Exit Application',command=ExitApplication,bg='brown',fg='white')
+#canvas1.create_window(150, 150, window=button2)
+button2.grid(row=0,column=3)        
+
 #button 1
 b1=Button(window,text ="Go",command=lambda: [kgtoothers(),successMessage()])
 b1.grid(row=0,column=0)
