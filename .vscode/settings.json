@@ -1,3 +1,12 @@
 {
-    "python.pythonPath": "C:\\Users\\mikem\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+    "python.pythonPath": "C:\\Users\\mikem\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Learning_Python}/lite.db",
+            "name": "book"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }
