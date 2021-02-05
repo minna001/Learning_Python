@@ -49,7 +49,4 @@ def update(id,title,author,year,isbn):
 
 
 connect()
-#insert("Run with the Devil","Slash",2005,123222233212)
-print(view())
-print(search(author="John Table"))
 

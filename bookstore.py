@@ -18,6 +18,7 @@ def get_selected_row(event):
             e4.insert(END,selected_tuple[4])
     except IndexError:
          pass
+        
     
 
 def view_command():
@@ -57,6 +58,10 @@ def update_command():
     else:
         tkinter.messagebox.showinfo('Return','You will now return to the application screen')
 
+    backend.insert(title_text.get(),title_Author.get(),title_year.get(),title_isbn.get())
+    tkinter.messagebox.showinfo("Success","Success" + " " + title_text.get() + " " +  "Added" )
+    list1.delete(0,END)
+    list1.insert(END,(title_text.get(),title_Author.get(),title_year.get(),title_isbn.get()))
 
 def close_command():
     print("Window Closed" , window.destroy())
@@ -136,6 +141,8 @@ sb1=Scrollbar(window)
 sb1.grid(row=2,column=2,rowspan=6)
 sb1.configure(command=list1.yview)
 list1.configure(yscrollcommand=sb1.set)
+#############################################Scroll bar
+
 ############################################
 
 window.mainloop()
